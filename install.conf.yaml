@@ -1,0 +1,24 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ["~"]
+
+- create:
+    - ~/.config
+
+- link:
+    ~/.config/fish/config.fish: fish/config.fish
+    ~/.config/fish/fish_plugins: fish/fish_plugins
+    ~/.config/fish/ildarworld: fish/ildarworld
+    ~/.config/omf: fish/omf
+    ~/.config/gh: gh
+    ~/.config/nvim: nvim
+    ~/.gitconfig: .gitconfig
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+    - mkdir -p ~/bin
+    - [./brew-apps.sh, Installing homebrew and essential utils]
+    - curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install > /tmp/omf-install && chmod +x /tmp/omf-install
+    - fish /tmp/omf-install --noninteractive && rm /tmp/omf-install
