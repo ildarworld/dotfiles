@@ -11,6 +11,7 @@
     ~/.config/fish/config.fish: fish/config.fish
     ~/.config/fish/fish_plugins: fish/fish_plugins
     ~/.config/fish/ildarworld: fish/ildarworld
+    ~/.config/fish/ybot: fish/ybot
     ~/.config/omf: fish/omf
     ~/.config/gh: gh
     ~/.config/nvim: nvim

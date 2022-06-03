@@ -25,13 +25,16 @@ set PATH ~/bin /usr/local/bin/ $PATH
 
 # set private environment variables stored outsited source control
 test -r ~/.fish.env; and export (cat ~/.fish.env|xargs -L 1)
-
+for f in (find ~/.config/fish/ybot/ -type f  -name '*.fish')
+    source $f
+end
 
 # load my fish functions
 for f in (find ~/.config/fish/ildarworld/ -type f  -name '*.fish')
     source $f
 end
 # Setting PATH for Python 3.9
+
 # The original version is saved in /Users/ildar/.config/fish/config.fish.pysave
 set -x PATH "/Library/Frameworks/Python.framework/Versions/3.9/bin" "$PATH"
 set -g theme_color_scheme solarized
@@ -48,4 +51,9 @@ set -x PATH "/Library/Frameworks/Python.framework/Versions/3.10/bin" "$PATH"
 if type -q exa
     alias ll "exa -l -g --icons"
     alias lla "ll -a"
+end
+
+
+function setenv
+    set -gx $argv
 end
