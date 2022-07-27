@@ -57,3 +57,9 @@ end
 function setenv
     set -gx $argv
 end
+
+direnv hook fish | source
+
+# Setting PATH for Python 3.9
+# The original version is saved in /Users/ildar/.config/fish/config.fish.pysave
+set -x PATH "/Library/Frameworks/Python.framework/Versions/3.9/bin" "$PATH"
