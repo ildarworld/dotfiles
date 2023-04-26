@@ -1,3 +1,3 @@
 function cat --description 'alias cat=bat'
-	bat $argv;
+	bat $argv --theme=GitHub;
 end
