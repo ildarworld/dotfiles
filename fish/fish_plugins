@@ -1,7 +1,13 @@
 jorgebucaran/fisher
 takashabe/fish-peco
-IlanCosman/tide@v5
 simnalamburt/shellder
 joehillen/ev-fish
 jethrokuan/z
 patrickf1/fzf.fish
+budimanjojo/tmux.fish
+catppuccin/fish
+jhillyerd/plugin-git
+pure-fish/pure
+gazorby/fish-abbreviation-tips
+meaningful-ooo/sponge
+ankitsumitg/docker-fish-completions
