@@ -18,6 +18,7 @@
     ~/.gitconfig: .gitconfig
     ~/.gitignore_global: .gitignore_global
     ~/.tmux.conf: .tmux.conf
+    ~/.config/starship.toml.conf: starship.toml
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]

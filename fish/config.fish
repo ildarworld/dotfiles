@@ -67,4 +67,4 @@ set -x PATH "/Library/Frameworks/Python.framework/Versions/3.11/bin" "$PATH"
 # tabtab source for electron-forge package
 # uninstall by removing these lines or running `tabtab uninstall electron-forge`
 [ -f /Users/ildar/.npm/_npx/6913fdfd1ea7a741/node_modules/tabtab/.completions/electron-forge.fish ]; and . /Users/ildar/.npm/_npx/6913fdfd1ea7a741/node_modules/tabtab/.completions/electron-forge.fish
-# starship init fish | source
+starship init fish | source

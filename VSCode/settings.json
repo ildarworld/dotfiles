@@ -6,18 +6,19 @@
     /**
     * Workbench
     **/
-    "workbench.colorTheme": "GitHub Dark Dimmed",
+    "workbench.colorTheme": "Nord",
     "workbench.panel.defaultLocation": "bottom",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.list.openMode": "doubleClick",
-    "workbench.preferredDarkColorTheme": "GitHub Dark Dimmed",
-    "workbench.preferredLightColorTheme": "GitHub Light Default",
+    "workbench.preferredDarkColorTheme": "Nord",
+    "workbench.preferredLightColorTheme": "Solarized Light",
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook",
         "*.rst": "default",
         "*.md": "default",
         "*.dot": "default",
-        "*.svg": "default"
+        "*.svg": "default",
+        "**/frontend/html/*/*": "django-html"
     },
     /**
     * Editor
@@ -58,7 +59,8 @@
         "**/.vscode": true
     },
     "files.associations": {
-        "*.sql": "sql"
+        "*.sql": "sql",
+        "*.toml": "toml"
     },
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -119,6 +121,7 @@
         "mypy",
         "nvim",
         "omegaconf",
+        "openpyxl",
         "ORJSON",
         "promocode",
         "Protectable",
@@ -149,6 +152,7 @@
         "virtualenvs",
         "whybot",
         "yapf",
+        "yarl",
         "Ybot",
         "Купить",
         "Маркетплейса",
@@ -300,8 +304,14 @@
     "python.analysis.diagnosticMode": "workspace",
     "python.createEnvironment.contentButton": "hide",
     "python.testing.pytestEnabled": true,
-    "window.zoomLevel": -2,
     "search.useIgnoreFiles": false,
     "workbench.editor.untitled.hint": "hidden",
-    "workbench.statusBar.visible": false
+    "window.zoomLevel": -1,
+    "workbench.preferredHighContrastLightColorTheme": "Solarized Light",
+    "workbench.preferredHighContrastColorTheme": "Nord",
+    "[toml]": {
+
+    },
+    "workbench.statusBar.visible": false,
+    "editor.scrollbar.verticalScrollbarSize": 12
 }
