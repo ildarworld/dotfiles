@@ -1,1 +1,0 @@
-abbr pf 'pip freeze > requirements.txt'

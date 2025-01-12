@@ -11,12 +11,10 @@
 	pager = delta
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
-[credential]
-	helper = osxkeychain
 [color]
 	status = auto
 	diff = auto
@@ -78,3 +76,9 @@
     colorMoved = default
 [advice]
 	pushNonFastForward = false
+
+[includeIf "gitdir/i:~/dev/commercial/"]
+    path = ~/personal/.gitconfig
+[maintenance]
+[credential]
+	helper = libsecret
