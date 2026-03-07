@@ -1,0 +1,3 @@
+bind generic 9 @sh -c "printf %(commit) | pbcopy"
+
+bind main c @sh -c "git log -1 --pretty=format:'%s' %(commit) | sed 's/^[^:]*: //' | pbcopy"

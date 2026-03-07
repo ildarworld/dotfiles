@@ -1,0 +1,305 @@
+{
+    "extensions.autoUpdate": false,
+    "window.nativeTabs": false,
+    "workbench.panel.defaultLocation": "bottom",
+    "workbench.list.openMode": "doubleClick",
+    "workbench.preferredDarkColorTheme": "Nord",
+    "workbench.preferredLightColorTheme": "Solarized Light",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook",
+        "*.rst": "default",
+        "*.md": "default",
+        "*.dot": "default",
+        "*.svg": "default",
+        "**/frontend/html/*/*": "django-html",
+        "git-rebase-todo": "gitlens.rebase"
+    },
+    /**
+    * Editor
+    **/
+    "editor.rulers": [
+        100, // <- a ruler in the default color or as customized (with "editorRuler.foreground") at column 100
+        {
+            "column": 120,
+            "color": "#ff0000"
+        },
+    ],
+    // Fonts
+    "editor.fontFamily": "FiraCode Nerd Font Mono",
+    "editor.fontLigatures": true,
+    "editor.fontWeight": "300",
+    "editor.formatOnPaste": true,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "editor.stickyScroll.enabled": true,
+    "editor.lineNumbers": "relative",
+    "editor.wordWrapColumn": 90,
+    "editor.tabCompletion": "on",
+    "editor.maxTokenizationLineLength": 20000000,
+    // "editor.renderControlCharacters": true,
+    "editor.cursorBlinking": "expand",
+    /**
+    * Files
+    **/
+    "files.autoGuessEncoding": true,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 36000,
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.mypy_cache": true,
+        "**/.pytest_cache": true,
+        "**/.venv": true,
+        "**/.vscode": true
+    },
+    "files.associations": {
+        "*.sql": "sql",
+        "*.toml": "toml"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    /**
+    * Window
+    **/
+    "window.autoDetectColorScheme": true,
+    "window.openFilesInNewWindow": "on",
+    "window.openFoldersInNewWindow": "on",
+    "window.restoreFullscreen": true,
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnType": true
+    },
+    "cSpell.userWords": [
+        "aiofiles",
+        "aiohttp",
+        "aioredis",
+        "asyncio",
+        "asyncpg",
+        "autofit",
+        "autoflush",
+        "autopep",
+        "autouse",
+        "barcoder",
+        "barcodes",
+        "conint",
+        "consts",
+        "conv",
+        "coro",
+        "dataclass",
+        "dateutil",
+        "dialogflow",
+        "dialogflowcx",
+        "docdb",
+        "dotenv",
+        "esbenp",
+        "fastapi",
+        "Fira",
+        "freezegun",
+        "funcs",
+        "gela",
+        "healthcheck",
+        "httpx",
+        "HUBSPOT",
+        "idempotency",
+        "Ildar",
+        "ildarworld",
+        "imageadjuster",
+        "innerjoin",
+        "isort",
+        "ITSM",
+        "joinedload",
+        "levelname",
+        "loguru",
+        "logzio",
+        "lxml",
+        "middlewares",
+        "Minnakhmetov",
+        "mktime",
+        "mypy",
+        "nvim",
+        "omegaconf",
+        "openpyxl",
+        "ORJSON",
+        "promocode",
+        "Protectable",
+        "psycopg",
+        "pycache",
+        "pydantic",
+        "Pylance",
+        "pylint",
+        "pymongo",
+        "pypoetry",
+        "pyproject",
+        "pytest",
+        "pytestmark",
+        "pytz",
+        "redoc",
+        "rgba",
+        "rpush",
+        "scrollback",
+        "sessionmaker",
+        "setenv",
+        "sheetnames",
+        "skus",
+        "sqlalchemy",
+        "starlette",
+        "subname",
+        "udid",
+        "uvicorn",
+        "uvloop",
+        "venv",
+        "virtualenvs",
+        "whybot",
+        "yapf",
+        "yarl",
+        "Ybot",
+        "Купить",
+        "Маркетплейса",
+        "Отсканировать",
+        "Ошибка",
+        "Промокод",
+        "Штрихкод"
+    ],
+    "cSpell.language": "en,ru",
+    "python.testing.pytestPath": "",
+    "python.venvPath": "./.venv",
+    "python.languageServer": "Pylance",
+    "python.defaultInterpreterPath": "/opt/homebrew/bin/python3",
+    /**
+    * GIT
+    **/
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
+    /**
+    * Terminal
+    **/
+    // "terminal.integrated.fontFamily": "monospace",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.external.osxExec": "/Applications/iTerm.app",
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.defaultProfile.osx": "fish",
+    "terminal.integrated.scrollback": 10000,
+    // "terminal.integrated.tabs.showActiveTerminal": "always",
+    "terminal.integrated.tabs.focusMode": "singleClick",
+    "terminal.integrated.persistentSessionReviveProcess": "never",
+    "terminal.integrated.profiles.osx": {
+        "bash": {
+            "path": "bash",
+            "args": [
+                "-l"
+            ],
+            "icon": "terminal-bash"
+        },
+        "zsh": {
+            "path": "zsh",
+            "args": [
+                "-l"
+            ]
+        },
+        "fish": {
+            "path": "/usr/local/bin/fish", // overriding
+            "args": [
+                "-l"
+            ]
+        }
+    },
+    "vim.mouseSelectionGoesIntoVisualMode": true,
+    /**
+    * Silence The Noise
+    **/
+    "workbench.sideBar.location": "right",
+    "editor.minimap.enabled": false,
+    "scm.diffDecorations": "none",
+    // "editor.hover.enabled": false,
+    "editor.matchBrackets": "never",
+    "workbench.tips.enabled": false,
+    "editor.colorDecorators": false,
+    "git.decorations.enabled": false,
+    "workbench.startupEditor": "none",
+    "editor.lightbulb.enabled": "off",
+    "editor.selectionHighlight": false,
+    "editor.overviewRulerBorder": false,
+    "editor.renderLineHighlight": "none",
+    "editor.occurrencesHighlight": "off",
+    "problems.decorations.enabled": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.gotoLocation.multipleReferences": "goto",
+    "editor.gotoLocation.multipleDefinitions": "goto",
+    "editor.gotoLocation.multipleDeclarations": "goto",
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "editor.gotoLocation.multipleImplementations": "goto",
+    "editor.gotoLocation.multipleTypeDefinitions": "goto",
+    "workbench.editor.showTabs": "single",
+    "editor.copyWithSyntaxHighlighting": false,
+    "editor.emptySelectionClipboard": false,
+    "window.newWindowDimensions": "inherit",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "files.trimTrailingWhitespace": true,
+    "editor.snippetSuggestions": "top",
+    "editor.detectIndentation": false,
+    "window.nativeFullScreen": false,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "search.exclude": {
+        "**/.venv": true,
+        "**/node_modules": true,
+        "**/dist": true,
+    },
+    /**
+    * Typography
+    **/
+    "editor.fontSize": 16,
+    "editor.lineHeight": 0,
+    "editor.suggestFontSize": 16,
+    "editor.suggestLineHeight": 28,
+    "terminal.integrated.fontSize": 14,
+    "redhat.telemetry.enabled": false,
+    "indentRainbow.errorColor": "rgba(236,217,221,0.6)",
+    "editor.accessibilitySupport": "off",
+    "diffEditor.renderSideBySide": false,
+    "python.analysis.autoFormatStrings": true,
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.completeFunctionParens": true,
+    "python.analysis.cacheLSPData": true,
+    "python.analysis.inlayHints.pytestParameters": true,
+    "python.createEnvironment.contentButton": "hide",
+    "python.testing.pytestEnabled": true,
+    "search.useIgnoreFiles": false,
+    "workbench.preferredHighContrastLightColorTheme": "Solarized Light",
+    "workbench.preferredHighContrastColorTheme": "Nord",
+    "[toml]": {},
+    "editor.scrollbar.verticalScrollbarSize": 12,
+    "workbench.editor.empty.hint": "hidden",
+    "editor.formatOnSaveMode": "modificationsIfAvailable",
+    "terminal.integrated.lineHeight": 1.5,
+    "terminal.integrated.tabs.location": "left",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "ruff.showNotifications": "onError",
+    "window.commandCenter": false,
+    "workbench.layoutControl.enabled": false,
+    "workbench.activityBar.location": "hidden",
+    "github.gitProtocol": "ssh",
+    "github.experimental.multipleAccounts": true,
+    "workbench.statusBar.visible": false,
+    "html.completion.attributeDefaultValue": "singlequotes",
+    "python.analysis.autoIndent": false,
+    "python.analysis.extraCommitChars": true,
+    "python.analysis.logLevel": "Warning",
+    "terminal.integrated.fontFamily": "FiraMono Nerd Font",
+    "yaml.yamlVersion": "1.2",
+    "yaml.format.enable": true,
+    "evenBetterToml.formatter.allowedBlankLines": 1,
+    "evenBetterToml.formatter.columnWidth": 120,
+    "docker.extension.enableComposeLanguageServer": false,
+}
