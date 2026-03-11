@@ -78,4 +78,3 @@ Do not commit plain-text secrets. Use one of:
 - `chezmoi` templates with external secret managers
 - encrypted files (age/gpg)
 - machine-local files excluded from source control
-
