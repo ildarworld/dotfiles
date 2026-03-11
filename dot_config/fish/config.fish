@@ -11,9 +11,8 @@ end
 
 set -x LC_ALL en_US.UTF-8
 set -x VIRTUAL_ENV_DISABLE_PROMPT off
-set PATH ~/bin /usr/local/bin/ $PATH
-set -x -U GOPATH $HOME/go
-set PATH $HOME/.local/bin $PATH
+fish_add_path "$HOME/bin" /usr/local/bin "$HOME/.local/bin"
+set -gx GOPATH "$HOME/go"
 # set private environment variables stored outside source control
 if test -r ~/.fish.env
     while read -l line
@@ -30,8 +29,13 @@ for f in ~/.config/fish/ildarworld/*.fish
     test -f $f; and source $f
 end
 
-set -x PATH "/opt/homebrew/opt/python@3.13/libexec/bin" "$PATH"
-set -x PATH "$HOME/poetry/bin" "$PATH"
+if test -d "/opt/homebrew/opt/python@3.13/libexec/bin"
+    fish_add_path "/opt/homebrew/opt/python@3.13/libexec/bin"
+end
+
+if test -d "$HOME/poetry/bin"
+    fish_add_path "$HOME/poetry/bin"
+end
 
 set -g theme_color_scheme solarized
 set -g theme_display_git_default_branch
