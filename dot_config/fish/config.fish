@@ -33,10 +33,6 @@ if test -d "/opt/homebrew/opt/python@3.13/libexec/bin"
     fish_add_path "/opt/homebrew/opt/python@3.13/libexec/bin"
 end
 
-if test -d "$HOME/poetry/bin"
-    fish_add_path "$HOME/poetry/bin"
-end
-
 set -g theme_color_scheme solarized
 set -g theme_display_git_default_branch
 
