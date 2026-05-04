@@ -11,6 +11,9 @@ end
 
 set -x LC_ALL en_US.UTF-8
 set -x VIRTUAL_ENV_DISABLE_PROMPT off
+
+set -Ux PATH /opt/homebrew/opt/sqlite/bin $PATH
+
 fish_add_path "$HOME/bin" /usr/local/bin "$HOME/.local/bin"
 set -gx GOPATH "$HOME/go"
 # set private environment variables stored outside source control
